@@ -7,8 +7,8 @@ x-ustreamer-svc: &ustreamer-svc
 ## Add your personal config here
 services:
   klipper:
-    - /dev:/dev
     volumes:
+    - /dev:/dev
     - /opt/prind/gcodes:/opt/printer_data/gcodes
 
   moonraker:

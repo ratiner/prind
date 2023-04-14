@@ -7,6 +7,7 @@ x-ustreamer-svc: &ustreamer-svc
 ## Add your personal config here
 services:
   klipper:
+    privileged: true
     volumes:
     - /dev:/dev
     - /opt/prind/gcodes:/opt/printer_data/gcodes

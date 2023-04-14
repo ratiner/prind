@@ -7,8 +7,7 @@ x-ustreamer-svc: &ustreamer-svc
 ## Add your personal config here
 services:
   klipper:
-    devices:
-    - /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+    - /dev:/dev
     volumes:
     - /opt/prind/gcodes:/opt/printer_data/gcodes
 
